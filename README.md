@@ -66,7 +66,7 @@ python3 primos.py
 
 ## Figura del Proyecto
 
-        ![Figura del proyecto](/is2_readme.jpg)
+        ![Figura del proyecto](/images/is2_readme.jpg)
 
 ---
 
