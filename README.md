@@ -1,66 +1,67 @@
-# Proyecto: UADER_IS2_BELTRAMI
+# Ingeniería de Software II - UADER FCyT Concepción del Uruguay
 
-## Descripción
-Este proyecto fue desarrollado como parte de la materia **Ingeniería de Software II**.  
+📚 Repositorio de trabajo para la materia **Ingeniería de Software II** – Año 2025  
+👩‍💻 Carrera: Licenciatura en Sistemas de Información  
+📁 Docente: Dr. Colla Pedro  
+📌 Alumna: Beltrami, María Lourdes
 
 ---
 
-## Estructura del Proyecto
+## 📂 Estructura del repositorio
 
 El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 
-```plaintext
-UADER_IS2_BELTRAMI/
-├───bin/
-├───doc/
-├───script/
-└───src/
-    └───primos.py
+```
+├── src/
+│   ├── factorial/            # Códigos del TP1 sobre factorial
+│   │   ├── factorial.py
+│   │   └── factorial_OOP.py
+│   ├── collatz.py            # Cálculo de secuencias de Collatz
+│   ├── doc/                  # Documentación y recursos teóricos
+│   └── bin/, script/         # Estructura de carpetas para futuros TPs
 ```
 
 ---
 
-## Funcionamiento del Programa
+## ✅ TP1 – Gestión de la Configuración y Programación Python
 
-El programa `primos.py` genera y muestra en la consola todos los números primos entre un límite inferior y superior predefinido (1 a 500).
+**Objetivo:** familiarizarse con el control de versiones, GitHub y programación estructurada y orientada a objetos en Python.
 
----
+### Actividades desarrolladas:
 
-## Instrucciones de Instalación y Uso
+- ✔️ Instalación de Git, Python 3 y pip
+- ✔️ Creación de repositorio GitHub con estructura: `src`, `doc`, `bin`, `script`
+- ✔️ Subida de archivo `primos.py` y simulación de pérdida + recuperación vía Git
+- ✔️ Uso de `README.md` con formato Markdown
+- ✔️ Instalación de `matplotlib` y generación de gráficos con `line.py`
+- ✔️ Desarrollo completo de:
+  - `factorial.py`: cálculo de factorial con soporte para rangos (4-8), `-10`, `5-`
+  - `factorial_OOP.py`: versión orientada a objetos con clase y método `run(min,max)`
+  - `collatz.py`: conjetura de Collatz para n ∈ [1, 10000] + gráfico de pasos
+- ✔️ Sincronización de todos los cambios con GitHub
 
-### Clonar el repositorio
-```bash
-git clone https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI.git
-```
+### Capturas o recursos:
 
-### Navegar al directorio `src`
-```bash
-cd UADER_IS2_BELTRAMI/src
-```
-
-### Ejecutar el programa `primos.py`
-```bash
-python3 primos.py
-```
+📝 [TP 1 FINAL](https://docs.google.com/document/d/1Dzc15F1y19sDcs5hDmzbuyzJrYl2byIaSQNTp71mulw/edit?usp=sharing)
 
 ---
 
-## Planificación del Proyecto
+## 📌 Próximos TPs
 
-### Primer actividad:
-1. Crear la estructura de carpetas.
-2. Subir el programa `primos.py` al repositorio.
-3. Añadir documentación en la carpeta `doc`.
-4. Realizar pruebas del código.
-5. Sincronizar cambios con GitHub.
-
+| TP | Tema | Estado |
+|----|------|--------|
+| TP1 | Gestión de la Configuración + Python | ✅ Finalizado |
+| TP2 | Arquitectura | 🕸️ En desarrollo |
+| TP3 | *(a completar más adelante)* | 🔒 Pendiente |
 
 ---
 
 ## Referencias
 
-- [Página oficial de GitHub](https://github.com/)
-- [Documentación oficial de Python](https://docs.python.org/3/)
+- [Python.org](https://www.python.org)
+- [GitHub Docs](https://docs.github.com)
+- [Matplotlib](https://matplotlib.org)
+- [Conjetura de Collatz - Wikipedia](https://es.wikipedia.org/wiki/Conjetura_de_Collatz)
 
 ---
 
@@ -69,5 +70,4 @@ python3 primos.py
 ![Figura del proyecto](/is2_readme.jpg)
 
 ---
-
 
