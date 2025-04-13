@@ -16,6 +16,10 @@ El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 │   ├── factorial/            # Códigos del TP1 sobre factorial
 │   │   ├── factorial.py
 │   │   └── factorial_OOP.py
+│   └── chatGPT/
+│       ├── chatgpt.py                # Código final del TP2
+│       ├── resultado_multimetric.txt # Memoria del análisis multimetric        
+│       └── .gitignore
 │   ├── collatz.py            # Cálculo de secuencias de Collatz
 │   ├── doc/                  # Documentación y recursos teóricos
 │   └── bin/, script/         # Estructura de carpetas para futuros TPs
@@ -44,6 +48,45 @@ El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 
 📝 [TP 1 FINAL](https://docs.google.com/document/d/1Dzc15F1y19sDcs5hDmzbuyzJrYl2byIaSQNTp71mulw/edit?usp=sharing)
 
+## TP2 – Arquitectura del Software y Calidad del Código
+
+**Objetivo:** desarrollar una aplicación en Python que interactúe con la API de ChatGPT desde consola, con funcionalidades específicas como historial de conversación, uso de variables de entorno, control de errores, y posterior análisis de calidad con herramientas estáticas.
+
+### Actividades desarrolladas en este caso:
+
+- ✔️ Configuración de entorno virtual (`venv`) en Linux Mint
+- ✔️ Instalación de dependencias: `openai`, `python-dotenv`, `pylint`, `multimetric`
+- ✔️ Desarrollo del script `chatgpt.py` con:
+  - Uso de variables de entorno desde `.env` para ocultar la API Key
+  - Soporte para Windows y Linux (`readline`)
+  - Validación de entrada vacía
+  - Modo conversacional activado con `--convers`
+  - Historial de preguntas y respuestas
+  - Captura de errores con `try/except`
+- ✔️ Modularización del código en funciones:
+  - `obtener_consulta()`
+  - `construir_mensajes()`
+  - `obtener_respuesta_chatgpt()`
+- ✔️ Incorporación de docstrings y reordenamiento de imports
+- ✔️ Ejecución de análisis con `multimetric` y `pylint`
+  - Análisis de métricas Halstead, ciclomática, mantenimiento, comentarios
+  - Correcciones aplicadas para subir el puntaje de `pylint`
+- ✔️ Revisión del código por ChatGPT con sugerencias para futuras mejoras
+
+### Métricas obtenidas:
+
+- `comment_ratio`: 31.10%
+- `cyclomatic_complexity`: 7
+- `halstead_effort`: 43436.36
+- `halstead_timerequired`: 2413.13 seg
+- `halstead_bugprop`: 0.586
+- `maintainability_index`: 60.5
+- `pylint score`: 5.45/10 → 8.70/10 luego de correcciones
+
+### Capturas o recursos:
+
+📝 [TP 2 FINAL](https://docs.google.com/document/d/1i1W88IJGQceqJWMwR5wzTOzjfpeBcEXOvT0Q40yctd4/edit?usp=sharing)
+📝 [Memoria resultados de multimetric] (https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/blob/main/src/chatGPT/resultado_multimetric.txt) 
 ---
 
 ## 📌 Próximos TPs
@@ -51,8 +94,9 @@ El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 | TP | Tema | Estado |
 |----|------|--------|
 | TP1 | Gestión de la Configuración + Python | ✅ Finalizado |
-| TP2 | Arquitectura | 🕸️ En desarrollo |
-| TP3 | *(a completar más adelante)* | 🔒 Pendiente |
+| TP2 | Arquitectura | ✅ Finalizado |
+| TP3 | Patrones de creación | 🕸️ En desarrollo |
+| TP4 | *(a completar más adelante)* | 🔒 Pendiente |
 
 ---
 
