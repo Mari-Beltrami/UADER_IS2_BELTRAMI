@@ -86,7 +86,9 @@ El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 ### Capturas o recursos:
 
 📝 [TP 2 FINAL](https://docs.google.com/document/d/1i1W88IJGQceqJWMwR5wzTOzjfpeBcEXOvT0Q40yctd4/edit?usp=sharing)
-📝 [Memoria resultados de multimetric] (https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/blob/main/src/chatGPT/resultado_multimetric.txt) 
+
+📝 [Memoria resultados de multimetric](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/blob/main/src/chatGPT/resultado_multimetric.txt)
+
 ---
 
 ## 📌 Próximos TPs
