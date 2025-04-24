@@ -1,0 +1,10 @@
+Una situación en la que resultaría útil aplicar el patrón Abstract Factory es en el desarrollo de una aplicación de escritorio multiplataforma, es decir, una aplicación que debe funcionar en distintos sistemas operativos como Windows, macOS y Linux.
+
+En este caso, la aplicación utiliza distintos componentes gráficos de interfaz (por ejemplo, botones, menús, ventanas, cuadros de texto, etc.), los cuales deben adaptarse al estilo visual y al comportamiento específico de cada sistema operativo. Por ejemplo, un botón en Windows tiene una apariencia diferente que en Mac, y también puede comportarse de forma distinta al interactuar con el usuario.
+
+Para resolver esta problemática sin tener que modificar el código principal de la aplicación cada vez que se cambia de sistema operativo, se puede utilizar el patrón Abstract Factory. Este patrón permite definir una fábrica abstracta que declara los métodos necesarios para crear los distintos elementos de la interfaz, como crearBoton(), crearMenu(), etc., y luego implementar una fábrica concreta por cada sistema operativo, que genere los componentes correspondientes a esa plataforma.
+
+De este modo, el código cliente (la aplicación) no necesita saber ni preocuparse por qué versión específica de botón o menú está usando: simplemente solicita los objetos a la fábrica. Si en algún momento se quiere cambiar de entorno (por ejemplo, pasar de Windows a Mac), basta con cambiar la instancia de la fábrica utilizada, sin necesidad de modificar el resto de la aplicación.
+
+Este enfoque promueve la reutilización de código, reduce el acoplamiento entre clases, y facilita la escalabilidad del sistema, ya que se pueden agregar nuevas “familias de productos” sin afectar el código existente.
+
