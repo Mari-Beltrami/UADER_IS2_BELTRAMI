@@ -12,19 +12,27 @@
 El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 
 ```
-├── src/
-│   ├── factorial/            # Códigos del TP1 sobre factorial
-│   │   ├── factorial.py
-│   │   └── factorial_OOP.py
-│   └── chatGPT/
-│       ├── chatgpt.py                # Código final del TP2
-│       ├── resultado_multimetric.txt # Memoria del análisis multimetric        
-│       └── .gitignore
-│   ├── collatz.py            # Cálculo de secuencias de Collatz
-│   ├── doc/                  # Documentación y recursos teóricos
-│   └── bin/, script/         # Estructura de carpetas para futuros TPs
+src/
+├── factorial/ #Códigos del TP1 sobre factorial
+│ ├── factorial.py
+│ └── factorial_OOP.py
+├── chatGPT/ #Códigos del TP2 sobre la API de ChatGPT
+│ ├── chatgpt.py
+│ ├── resultado_multimetric.txt #Memoria del análisis multimetric
+│ └── .gitignore
+├── tp3/ #Códigos del TP3 sobre Patrones de Creación
+│ ├── ejercicio1.py #Singleton – Factorial
+│ ├── ejercicio2.py #Singleton – Impuestos
+│ ├── ejercicio3.py #Factory Method – Hamburguesas
+│ ├── ejercicio4.py #Factory Method – Facturas
+│ ├── ejercicio5.py #Builder – Avión
+│ ├── ejercicio6.py #Prototype – Clonación
+│ └── ejercicio7.txt #Abstract Factory – Justificación conceptual
+├── collatz.py #Conjetura de Collatz con gráfico
+├── doc/ 
+├── bin/ 
+└── script/ 
 ```
-
 ---
 
 ## ✅ TP1 – Gestión de la Configuración y Programación Python
@@ -89,6 +97,30 @@ El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 
 📝 [Memoria resultados de multimetric](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/blob/main/src/chatGPT/resultado_multimetric.txt)
 
+## TP3 – Patrones de Creación
+
+**Objetivo:** aplicar los principales patrones de diseño creacionales (Singleton, Factory Method, Builder y Prototype) para resolver distintos ejercicios en Python, basados en situaciones prácticas del desarrollo de software.
+
+### Actividades desarrolladas:
+
+- ✔️ Análisis de los distintos patrones de creación y su aplicabilidad en casos concretos
+- ✔️ Implementación del patrón **Singleton** para:
+  - Cálculo de factorial reutilizable desde una única instancia
+  - Servicio de cálculo de impuestos (IVA, IIBB, contribuciones municipales)
+- ✔️ Implementación del patrón **Factory Method** para:
+  - Diferentes métodos de entrega de hamburguesas (mostrador, retiro, delivery)
+  - Emisión de facturas según condición impositiva del cliente
+- ✔️ Implementación del patrón **Builder** para la construcción paso a paso de un objeto complejo: un avión con cuerpo, alas, turbinas y tren de aterrizaje
+- ✔️ Implementación del patrón **Prototype** para clonar objetos de forma segura, incluyendo la clonación de clones
+- ✔️ Justificación escrita de cada elección de patrón en función del problema planteado
+- ✔️ Redacción de una situación real donde sería útil aplicar el patrón **Abstract Factory** (sin implementación requerida)
+
+### Capturas o recursos:
+
+📝 [TP 3 FINAL (expliación de patrones utilizados)](https://docs.google.com/document/d/1E7eUtB18OApEi_NZP_vQOc4jI_WAVJU2WyaGRjGD7JY/edit?usp=sharing)
+
+📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp3)
+
 ---
 
 ## 📌 Próximos TPs
@@ -97,9 +129,9 @@ El proyecto tiene la siguiente estructura de carpetas hasta el momento:
 |----|------|--------|
 | TP1 | Gestión de la Configuración + Python | ✅ Finalizado |
 | TP2 | Arquitectura | ✅ Finalizado |
-| TP3 | Patrones de creación | 🕸️ En desarrollo |
+| TP3 | Patrones de creación | ✅ Finalizado  |
+| TP4 | Patrones estructurales | 🕸️ En desarrollo |
 | TP4 | *(a completar más adelante)* | 🔒 Pendiente |
-
 ---
 
 ## Referencias
