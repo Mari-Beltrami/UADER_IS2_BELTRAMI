@@ -28,6 +28,12 @@ src/
 │ ├── ejercicio5.py #Builder – Avión
 │ ├── ejercicio6.py #Prototype – Clonación
 │ └── ejercicio7.txt #Abstract Factory – Justificación conceptual
+├── tp4/                          # Códigos del TP4 sobre Patrones Estructurales
+│   ├── ejercicio1.py             # Proxy
+│   ├── ejercicio2.py             # Bridge
+│   ├── ejercicio3.py             # Composite
+│   ├── ejercicio4.py             # Decorator
+│   └── ejercicio5.py             # Flyweight (Dentro del código está comentada la idea)
 ├── collatz.py #Conjetura de Collatz con gráfico
 ├── doc/ 
 ├── bin/ 
@@ -121,6 +127,20 @@ src/
 
 📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp3)
 
+## TP4 – Patrones Estructurales
+
+**Objetivo:** implementar distintos patrones de diseño estructurales (Proxy, Bridge, Composite, Decorator, Flyweight), aplicándolos a problemas específicos modelados en Python.
+
+### Actividades desarrolladas:
+
+- ✔️ Implementación del patrón **Proxy** para controlar el acceso a una clase que realiza operaciones de red (`ping`), redirigiendo o validando según la IP
+- ✔️ Implementación del patrón **Bridge** para desacoplar una lámina de acero de su método de producción, permitiendo seleccionar entre dos trenes laminadores
+- ✔️ Implementación del patrón **Composite** para modelar un ensamblado jerárquico de subconjuntos y piezas, incluyendo un subconjunto adicional opcional
+- ✔️ Implementación del patrón **Decorator** para aplicar modificaciones sucesivas sobre un número original, anidando operaciones como suma, multiplicación y división
+- ✔️ Justificación conceptual del patrón **Flyweight** con ejemplo aplicado a la reutilización de caracteres en un editor de texto, optimizando memoria
+
+📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp4)
+
 ---
 
 ## 📌 Próximos TPs
@@ -130,8 +150,9 @@ src/
 | TP1 | Gestión de la Configuración + Python | ✅ Finalizado |
 | TP2 | Arquitectura | ✅ Finalizado |
 | TP3 | Patrones de creación | ✅ Finalizado  |
-| TP4 | Patrones estructurales | 🕸️ En desarrollo |
-| TP4 | *(a completar más adelante)* | 🔒 Pendiente |
+| TP4 | Patrones estructurales | ✅ Finalizado |
+| TP5 | Patrones de comportamiento | 🕸️ En desarrollo |
+| TP6 | *(a completar más adelante)* | 🔒 Pendiente |
 ---
 
 ## Referencias
