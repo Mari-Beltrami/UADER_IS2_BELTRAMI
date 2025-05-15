@@ -34,6 +34,12 @@ src/
 │   ├── ejercicio3.py             # Composite
 │   ├── ejercicio4.py             # Decorator
 │   └── ejercicio5.py             # Flyweight (Dentro del código está comentada la idea)
+├── tp5/                          # Códigos del TP4 sobre Patrones Estructurales
+│   ├── ejercicio1.py            
+│   ├── ejercicio2.py            
+│   ├── ejercicio3.py             
+│   ├── ejercicio4.py             
+│   └── ejercicio5.py             
 ├── collatz.py #Conjetura de Collatz con gráfico
 ├── doc/ 
 ├── bin/ 
@@ -141,6 +147,19 @@ src/
 
 📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp4)
 
+## TP5 – Patrones de Comportamiento
+
+**Objetivo:** aplicar los principales patrones de comportamiento (Chain of Responsibility, Iterator, Observer, State, Memento)
+
+### Actividades desarrolladas:
+- ✔️ Implementación del patrón **Chain of Responsibility** 
+- ✔️ Implementación del patrón **Iterator** 
+- ✔️ Implementación del patrón **Observer** 
+- ✔️ Modificación del archivo `IS2_taller_scanner.py` 
+- ✔️ Modificación del archivo `IS2_taller_memory.py` 
+
+📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp5)
+
 ---
 
 ## 📌 Próximos TPs
@@ -151,8 +170,11 @@ src/
 | TP2 | Arquitectura | ✅ Finalizado |
 | TP3 | Patrones de creación | ✅ Finalizado  |
 | TP4 | Patrones estructurales | ✅ Finalizado |
-| TP5 | Patrones de comportamiento | 🕸️ En desarrollo |
-| TP6 | *(a completar más adelante)* | 🔒 Pendiente |
+| TP5 | Patrones de comportamiento | ✅ Finalizado |
+| TP6 | Ingeniería reversa | 🕸️ En desarrollo |
+| TP7 | Re-factorización | 🕸️ En desarrollo |
+| TP8 | Re-ingeniería | 🕸️ En desarrollo |
+| TP9 | *(a completar más adelante)* | 🔒 Pendiente |
 ---
 
 ## Referencias
