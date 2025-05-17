@@ -39,7 +39,11 @@ src/
 │   ├── ejercicio2.py            
 │   ├── ejercicio3.py             
 │   ├── ejercicio4.py             
-│   └── ejercicio5.py             
+│   └── ejercicio5.py     
+├── tp6/ # Códigos del TP6 sobre Ingeniería Reversa
+│   ├── getJason.py # Código corregido desde el .pyc original
+│   ├── sitedata.json # Archivo de prueba con los tokens
+│   ├── getJason.pyc # Versión compilada original (bytecode)      
 ├── collatz.py #Conjetura de Collatz con gráfico
 ├── doc/ 
 ├── bin/ 
@@ -160,6 +164,44 @@ src/
 
 📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp5)
 
+## TP6 – Ingeniería Reversa, Re-factoría y Re-Ingeniería
+
+**Objetivo:** aplicar la metodología de ingeniería reversa sobre un programa legado compilado (`getJason.pyc`), recuperar su código fuente, corregirlo según la documentación, y dejarlo listo para su reutilización. Finalmente, realizar casos de prueba que validen su funcionamiento.
+
+### Actividades desarrolladas:
+
+- ✔️ Análisis de los archivos proporcionados: `getJason.pyc`, `sitedata.json` y consigna del TP.
+- ✔️ Ejecución del archivo `.pyc` para observar su comportamiento: se detectó que el programa no coincidía con la documentación, ya que tomaba el argumento como nombre de archivo, no como clave de un JSON.
+- ✔️ Aplicación de los 6 pasos de la metodología de Ingeniería Reversa:
+  1. Recolección de artefactos
+  2. Ejecución y observación del sistema
+  3. Comparación con la documentación esperada
+  4. Identificación de estructuras clave
+  5. Formulación de hipótesis de funcionamiento
+  6. Plan de ingeniería inversa
+- ✔️ Decompilación del archivo con la herramienta PyLingual y obtención del código original.
+- ✔️ Verificación del código decompilado: reproduce el mismo error que el binario original.
+- ✔️ Identificación de diferencias con la documentación: el archivo esperaba como argumento el nombre de archivo y usaba la clave fija `"token1"`, cuando debía aceptar cualquier clave como argumento y usar `"token1"` como valor por defecto.
+- ✔️ Reescritura del archivo `getJason.py` para:
+  - Leer siempre desde el archivo `sitedata.json`
+  - Usar como argumento la clave a recuperar (si no se indica ninguna, toma `"token1"`)
+- ✔️ Documentación del nuevo código con ejemplo de uso y encabezado formal.
+- ✔️ Ejecución de **casos de prueba** con diferentes argumentos, incluyendo claves válidas, inválidas y ausencia de argumento. El script respondió correctamente en todos los casos esperados.
+
+### Casos de prueba:
+
+| Nº | Comando ejecutado                         | Salida esperada              | Resultado |
+|----|-------------------------------------------|------------------------------|-----------|
+| 1  | `python3 getJason.py`                     | `C598-ECF9-F0F7-881A`        | ✅ OK     |
+| 2  | `python3 getJason.py token1`              | `C598-ECF9-F0F7-881A`        | ✅ OK     |
+| 3  | `python3 getJason.py token2`              | `C598-ECF9-F0F7-881B`        | ✅ OK     |
+
+### Recursos:
+
+📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp6)
+📝 [TP6 RESULTADO FINAL](https://docs.google.com/document/d/18IJth5XFlOHihDJImOKLCpE1Z0Lgl79sHB3ZxaBN8nk/edit?tab=t.0)
+
+
 ---
 
 ## 📌 Próximos TPs
@@ -171,7 +213,7 @@ src/
 | TP3 | Patrones de creación | ✅ Finalizado  |
 | TP4 | Patrones estructurales | ✅ Finalizado |
 | TP5 | Patrones de comportamiento | ✅ Finalizado |
-| TP6 | Ingeniería reversa | 🕸️ En desarrollo |
+| TP6 | Ingeniería reversa | ✅ Finalizado |
 | TP7 | Re-factorización | 🕸️ En desarrollo |
 | TP8 | Re-ingeniería | 🕸️ En desarrollo |
 | TP9 | *(a completar más adelante)* | 🔒 Pendiente |
