@@ -43,11 +43,15 @@ src/
 ├── tp6/ # Códigos del TP6 sobre Ingeniería Reversa
 │   ├── getJason.py # Código corregido desde el .pyc original
 │   ├── sitedata.json # Archivo de prueba con los tokens
-│   ├── getJason.pyc # Versión compilada original (bytecode)     
+│   └── getJason.pyc # Versión compilada original (bytecode)     
 ├── tp7/ # Códigos del TP7
 │   ├── getJason.py       # Código final refactorizado con Singleton, robustez y branching by abstraction
 │   ├── sitedata.json     # Archivo de prueba con claves y tokens para validar funcionamiento
-│   ├── getJason.pyc      # Archivo compilado original (bytecode) que fue base para la ingeniería reversa
+│   └── getJason.pyc      # Archivo compilado original (bytecode) que fue base para la ingeniería reversa
+├── tp8/ # Códigos del TP8
+│   ├── get_jason.py      # Código final refactorizado con re-ingeniería, versión 1.2, Singleton, Chain of Responsibility e Iterator
+│   ├── sitedata.json     # Archivo JSON con las claves de los bancos, usado por el Singleton TokenReader
+│   └── getJason.pyc      # Archivo compilado original (bytecode) que fue base para aplicar ingeniería reversa, refactorización y re-ingeniería
 ├── collatz.py #Conjetura de Collatz con gráfico
 ├── doc/ 
 ├── bin/ 
@@ -228,6 +232,26 @@ src/
 📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp7)
 📝 [TP7 RESULTADO FINAL](https://docs.google.com/document/d/18IJth5XFlOHihDJImOKLCpE1Z0Lgl79sHB3ZxaBN8nk/edit?usp=sharing)
 
+## TP8 – Re-ingeniería
+
+**Objetivo:** aplicar la metodología de re-ingeniería sobre el programa `get_jason.py`, reorganizándolo para automatizar la selección del banco, mejorar la mantenibilidad, y aplicar nuevos patrones de diseño, dejando el sistema listo para evolucionar a futuro.
+
+### Actividades desarrolladas:
+
+- ✔️ Automatización de la selección de banco para pagos, eliminando la decisión manual.
+- ✔️ Implementación del patrón **Singleton** para acceder a claves de los bancos desde `sitedata.json`.
+- ✔️ Aplicación del patrón **Chain of Responsibility** para controlar las cuentas y balancear pagos entre ellas.
+- ✔️ Aplicación del patrón **Iterator** para listar pagos realizados de forma cronológica.
+- ✔️ Inclusión de una opción `-v` para mostrar la versión (`1.2`).
+- ✔️ Manejo robusto de errores, evitando caídas inesperadas.
+- ✔️ Documentación detallada con carátula, comentarios y docstrings.
+- ✔️ Ejecución del analizador estático **pylint**, obteniendo un puntaje final de **8.83/10**.
+
+### Recursos:
+
+📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp8)
+📝 [TP8 RESULTADO FINAL](https://docs.google.com/document/d/1-pMSWu814CG5S1Y0ML0KHon1BgDR6Yifd4HkiKfZFcw/edit?usp=sharing)
+
 ---
 
 ## 📌 Próximos TPs
@@ -241,8 +265,9 @@ src/
 | TP5 | Patrones de comportamiento | ✅ Finalizado |
 | TP6 | Ingeniería reversa | ✅ Finalizado |
 | TP7 | Re-factorización | ✅ Finalizado |
-| TP8 | Re-ingeniería | 🕸️ En desarrollo |
-| TP9 | *(a completar más adelante)* | 🔒 Pendiente |
+| TP8 | Re-ingeniería | ✅ Finalizado |
+| TP9 | ... | 🕸️ En desarrollo |
+| TP10 | *(a completar más adelante)* | 🔒 Pendiente |
 ---
 
 ## Referencias
