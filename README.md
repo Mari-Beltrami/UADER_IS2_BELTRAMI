@@ -43,7 +43,11 @@ src/
 ├── tp6/ # Códigos del TP6 sobre Ingeniería Reversa
 │   ├── getJason.py # Código corregido desde el .pyc original
 │   ├── sitedata.json # Archivo de prueba con los tokens
-│   ├── getJason.pyc # Versión compilada original (bytecode)      
+│   ├── getJason.pyc # Versión compilada original (bytecode)     
+├── tp7/ # Códigos del TP7
+│   ├── getJason.py       # Código final refactorizado con Singleton, robustez y branching by abstraction
+│   ├── sitedata.json     # Archivo de prueba con claves y tokens para validar funcionamiento
+│   ├── getJason.pyc      # Archivo compilado original (bytecode) que fue base para la ingeniería reversa
 ├── collatz.py #Conjetura de Collatz con gráfico
 ├── doc/ 
 ├── bin/ 
@@ -201,6 +205,28 @@ src/
 📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp6)
 📝 [TP6 RESULTADO FINAL](https://docs.google.com/document/d/18IJth5XFlOHihDJImOKLCpE1Z0Lgl79sHB3ZxaBN8nk/edit?tab=t.0)
 
+## TP7 – Re-factorización
+
+**Objetivo:** aplicar la metodología de re-factorización sobre el programa `getJason.py` previamente recuperado en el TP6, reorganizándolo con programación orientada a objetos, aplicando el patrón Singleton, mejorando la robustez y la calidad del código, y utilizando estrategias como branching by abstraction.
+
+### Actividades desarrolladas:
+
+- ✔️ Transformación del código para usar programación orientada a objetos.
+- ✔️ Implementación del patrón **Singleton** para asegurar una única instancia.
+- ✔️ Inclusión de control robusto de errores para evitar fallas no controladas.
+- ✔️ Aplicación de **branching by abstraction** para permitir usar la versión antigua o la nueva.
+- ✔️ Incorporación de una opción `-v` para mostrar la versión del programa (`versión 1.1`).
+- ✔️ Adición de comentarios explicativos y carátula legal con copyright.
+- ✔️ Ejecución del analizador estático **pylint** y corrección de observaciones hasta alcanzar un puntaje ≥ 8/10.
+
+### Resultado pylint:
+
+✅ El código final alcanzó un puntaje de **8.83/10**, cumpliendo con el requisito del práctico.
+
+### Recursos:
+
+📝 [Archivos subidos](https://github.com/Mari-Beltrami/UADER_IS2_BELTRAMI/tree/main/src/tp7)
+📝 [TP7 RESULTADO FINAL](https://docs.google.com/document/d/18IJth5XFlOHihDJImOKLCpE1Z0Lgl79sHB3ZxaBN8nk/edit?usp=sharing)
 
 ---
 
@@ -214,7 +240,7 @@ src/
 | TP4 | Patrones estructurales | ✅ Finalizado |
 | TP5 | Patrones de comportamiento | ✅ Finalizado |
 | TP6 | Ingeniería reversa | ✅ Finalizado |
-| TP7 | Re-factorización | 🕸️ En desarrollo |
+| TP7 | Re-factorización | ✅ Finalizado |
 | TP8 | Re-ingeniería | 🕸️ En desarrollo |
 | TP9 | *(a completar más adelante)* | 🔒 Pendiente |
 ---
